@@ -1,7 +1,7 @@
 # Default values for python.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-replicaCount: 10
+replicaCount: 5
 
 strategy:
   rollingUpdate:
@@ -11,7 +11,7 @@ strategy:
 image:
   pullPolicy: IfNotPresent
   repository: prch12/alpineweb
-  tag: web1
+  tag: web5
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
