@@ -5,8 +5,8 @@ replicaCount: 1
 
 image:
   pullPolicy: IfNotPresent
-  repository: codefresh/kubectl
-  tag: 1.14.9
+  repository: prch12
+  tag: web1
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
