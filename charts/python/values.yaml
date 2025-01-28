@@ -11,7 +11,7 @@ strategy:
 image:
   pullPolicy: IfNotPresent
   repository: prch12/alpineweb
-  tag: web6
+  tag: web7
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
