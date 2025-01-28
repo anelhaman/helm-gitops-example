@@ -8,6 +8,12 @@ metadata:
     app: {{ template "fullname" . }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: {{ default "1" .Values.strategy.rollingUpdate.maxSurge }}
+      maxUnavailable: {{ default "1" .Values.strategy.rollingUpdate.maxUnavailable }}
+
   selector:
     matchLabels:
       app: {{ template "fullname" . }}
