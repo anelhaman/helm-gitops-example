@@ -5,7 +5,7 @@ replicaCount: 1
 
 image:
   pullPolicy: IfNotPresent
-  repository: prch12
+  repository: prch12/alpineweb
   tag: web1
 imagePullSecrets: []
 nameOverride: ""
